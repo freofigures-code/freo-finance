@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  /* Geometric Balance Theme Colors */
+  --color-brand-black: #0A0A0A;
+  --color-brand-dark: #0A0A0A;
+  --color-brand-sidebar: #0F0F0F;
+  --color-brand-header: #0C0C0C;
+  --color-brand-card: #141414;
+  --color-brand-border: #222222;
+  --color-brand-border-light: #333333;
+  --color-brand-gold: #E2B15D;
+  --color-brand-gold-glow: rgba(226, 177, 93, 0.3);
+  --color-brand-gold-dark: #C99E54;
+  --color-brand-success: #34D399;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-brand-dark);
+    --foreground: #F0F0F0;
+    --card: var(--color-brand-card);
+    --card-foreground: #F0F0F0;
+    --border: var(--color-brand-border);
+    --input: var(--color-brand-border);
+    --primary: var(--color-brand-gold);
+    --primary-foreground: #0A0A0A;
+    --muted: #222222;
+    --muted-foreground: #888888;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar for Geometric Balance */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
