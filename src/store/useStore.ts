@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { supabase } from '../lib/supabaseClient';
+import { supabase } from '../lib/supabase';
 
 export type Channel = string;
 export type SaleStatus = 'vendido' | 'enviado' | 'concluído' | 'cancelado';
